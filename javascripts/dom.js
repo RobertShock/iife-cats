@@ -10,7 +10,7 @@ var CatStore = ((oldCatStore) => {
 			});
 		});
 
-		CatStore.domString(someArray)
+		CatStore.domString(cats)
 	};
 
 	oldCatStore.domString = (inputArray) =>{
@@ -36,7 +36,7 @@ var CatStore = ((oldCatStore) => {
 	};
 
 	oldCatStore.writeToDom = (strang) =>{
-		let fancyPetStore = document.getElementByID("fancyPetStore");
+		let fancyPetStore = document.getElementById("fancyPetStore");
 		fancyPetStore.innerHTML = strang;
 
 	};
